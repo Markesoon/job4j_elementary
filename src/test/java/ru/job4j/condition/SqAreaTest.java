@@ -25,7 +25,6 @@ public class SqAreaTest {
             Assert.assertEquals(expected, out, 0.01);
         }
 
-
         @Test
     public void whenP4K3Square1Dot5() {
         double expected = 1.5;
