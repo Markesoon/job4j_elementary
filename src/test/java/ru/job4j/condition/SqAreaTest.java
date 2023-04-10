@@ -31,7 +31,7 @@ public class SqAreaTest {
         int p = 4;
         double k = 3;
         double out = SqArea.square(p, k);
-        Assert.assertEquals(expected,  out, 0.01);
+        Assert.assertEquals(expected, out, 0.01);
     }
 
 }
