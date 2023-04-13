@@ -33,5 +33,4 @@ public class MaxTest {
         assertThat(result).isEqualTo(expected);
     }
 
-
 }
