@@ -25,7 +25,7 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax1To2Thenequal() {
+    public void whenMax1To2Thenequals() {
         int left = 1;
         int right = 2;
         int result = Max.max(left, right);
