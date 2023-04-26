@@ -56,8 +56,24 @@ public class FindLoopTest {
     }
 
     @Test
-    public void whenDiapasonHasNot8ThenMinus1() {
-        /* Дописать тест, когда элемент 8 в диапазоне не найден.
-        Можно искать любой другой элемент, корректно отражая этот факт в названии теста. */
+    public void whenDiapasonHas8Thenminus1() {
+        int[] data = new int[] {5, 2, 10, 2, 4, 8, 14, 3, 21, 16};
+        int el = 8;
+        int start = 1;
+        int finish = 3;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = -1;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    public void whenDiapasonHas2Then() {
+        int[] data = new int[] {5, 2, 10, 2, 4, 8, 14, 3, 21, 16};
+        int el = 10;
+        int start = 1;
+        int finish = 3;
+        int result = FindLoop.indexInRange(data, el, start, finish);
+        int expected = 2;
+        assertThat(result).isEqualTo(expected);
     }
 }
