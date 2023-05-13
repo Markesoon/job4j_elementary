@@ -5,11 +5,13 @@ public class Max {
         return left > right ? left : right;
     }
 
-    public static int max(int right, int left, int second) {
-        return max(left, max(second, left));
+    public static int max(int first, int second, int third) {
+        return max(first, max(second, third)
+        );
     }
 
-    public static int max(int left, int right, int second, int third) {
-        return max(right, max(second, third));
+        public static int max(int first, int second, int third, int fourth) {
+            return max(first, max(second, third, fourth)
+            );
     }
 }

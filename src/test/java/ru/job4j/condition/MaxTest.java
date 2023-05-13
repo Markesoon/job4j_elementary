@@ -9,27 +9,30 @@ public class MaxTest {
     @Test
     public void whenMax1To6To23Then23() {
         int left = 6;
-        int up = 23;
-        int result = Max.max(left, up);
+        int right = 23;
+        int result = Max.max(left, right);
         int expected = 23;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
     public void whenMax2To4To51To101Then101() {
-        int up = 51;
-        int third = 101;
-        int result = Max.max(up, third);
-        int expected = 101;
+        int first = 6;
+        int second = 2;
+        int third = 23;
+        int result = Max.max(first, second, third);
+        int expected = 23;
         assertThat(result).isEqualTo(expected);
     }
 
     @Test
-    public void whenMax3To2Thenequals() {
-        int left = 2;
-        int right = 2;
-        int result = Max.max(left, right);
-        int expected = 2;
+    public void whenMax3To2Thene3() {
+        int first = 2;
+        int second = 2;
+        int third = 2;
+        int four = 3;
+        int result = Max.max(first, second, third, four);
+        int expected = 3;
         assertThat(result).isEqualTo(expected);
     }
 
