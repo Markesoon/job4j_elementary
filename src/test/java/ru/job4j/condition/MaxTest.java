@@ -16,7 +16,7 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax2To4To51To101Then101() {
+    public void whenMax2To6To2To23Then23() {
         int first = 6;
         int second = 2;
         int third = 23;
@@ -26,7 +26,7 @@ public class MaxTest {
     }
 
     @Test
-    public void whenMax3To2Thene3() {
+    public void whenMax3To2To2To2To3Thene3() {
         int first = 2;
         int second = 2;
         int third = 2;
